@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+}
+
+td, th {
+    width: 10%;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.icosearch{
+    cursor: pointer;
+}
+
+.icoedit{
+    cursor: pointer;
+    color: green;
+}
+
+.icodelete{
+    cursor: pointer;
+    color: red;
+}
+
+.botagregar{
+    font-size: small;
+    padding: 10px;
+}

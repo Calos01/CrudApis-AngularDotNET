@@ -1,0 +1,49 @@
+<div class="title">
+    <h1> {{titulo}} Mascota</h1>
+</div>
+<app-progressbar *ngIf="loading"></app-progressbar>
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="RegistraryEditardatos()">
+        <mat-card>
+            <mat-card-header>Datos de La Mascota</mat-card-header>
+            <mat-card-content>
+                <mat-grid-list cols="2" rowHeight="100px">
+                    <mat-grid-tile [colspan]="2">
+                        <mat-form-field>
+                            <mat-label>Nombre</mat-label>
+                            <input formControlName="nombre" matInput>
+                        </mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-form-field>
+                            <mat-label>Edad</mat-label>
+                            <input formControlName="edad" type="number" matInput>
+                        </mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-form-field>
+                            <mat-label>Raza</mat-label>
+                            <input formControlName="raza" matInput>
+                        </mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-form-field>
+                            <mat-label>Color</mat-label>
+                            <input formControlName="color" matInput>
+                        </mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-form-field>
+                            <mat-label>Peso</mat-label>
+                            <input formControlName="peso" type="number" matInput>
+                        </mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile [colspan]="2">
+                        <button class="btn-volver" routerLink="/ListadoMascota" mat-raised-button>Volver</button>
+                        <button [disabled]="form.invalid" type="submit" mat-raised-button color="primary">Aceptar</button>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </mat-card-content>
+        </mat-card>
+    </form>
+</div>

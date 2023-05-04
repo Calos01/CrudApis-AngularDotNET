@@ -1,0 +1,55 @@
+<div class="title">
+    <h1> Lista de Mascotas</h1>    
+</div>
+<app-progressbar *ngIf="loading"></app-progressbar>
+<div class="container">
+    <mat-form-field>
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Buscar.." #input>
+    </mat-form-field>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+        <!-- Position Column -->
+        <ng-container matColumnDef="nombre" mat-sort-header>
+          <th mat-header-cell *matHeaderCellDef> Nombre </th>
+          <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="edad" mat-sort-header>
+          <th mat-header-cell *matHeaderCellDef> Edad </th>
+          <td mat-cell *matCellDef="let element"> {{element.edad}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="raza" mat-sort-header>
+          <th mat-header-cell *matHeaderCellDef> Raza </th>
+          <td mat-cell *matCellDef="let element"> {{element.raza}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="color" mat-sort-header>
+          <th mat-header-cell *matHeaderCellDef> Color </th>
+          <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="peso" mat-sort-header>
+          <th mat-header-cell *matHeaderCellDef> Peso </th>
+          <td mat-cell *matCellDef="let element"> {{element.peso}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="acciones" mat-sort-header>
+            <th mat-header-cell *matHeaderCellDef> 
+                <button [routerLink]="['/AgregarMascota']" mat-raised-button color="primary" class="botagregar">AGREGAR</button>  
+            </th>
+            <td mat-cell *matCellDef="let element">
+                <mat-icon routerLink="/VerMascota/{{element.id}}" matTooltip="Ver" aria-hidden="false" class="icosearch" fontIcon="search"></mat-icon>
+                <mat-icon [routerLink]="['/EditarMascota', element.id]" matTooltip="Editar" aria-hidden="false" class="icoedit" fontIcon="edit"></mat-icon>
+                <mat-icon matTooltip="Eliminar" (click)="eliminarMascota(element.id)" aria-hidden="false" class="icodelete" aria-label="Example home icon" fontIcon="delete"></mat-icon>
+            </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [length]="100" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+</div>
