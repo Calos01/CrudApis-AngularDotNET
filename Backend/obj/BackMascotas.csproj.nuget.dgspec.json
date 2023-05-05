@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProyectoHarp\\BackMascotas\\BackMascotas.csproj": {}
+    "D:\\Proyectos\\CrudApis-AngularDotNET\\Backend\\BackMascotas.csproj": {}
   },
   "projects": {
-    "D:\\ProyectoHarp\\BackMascotas\\BackMascotas.csproj": {
+    "D:\\Proyectos\\CrudApis-AngularDotNET\\Backend\\BackMascotas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProyectoHarp\\BackMascotas\\BackMascotas.csproj",
+        "projectUniqueName": "D:\\Proyectos\\CrudApis-AngularDotNET\\Backend\\BackMascotas.csproj",
         "projectName": "BackMascotas",
-        "projectPath": "D:\\ProyectoHarp\\BackMascotas\\BackMascotas.csproj",
+        "projectPath": "D:\\Proyectos\\CrudApis-AngularDotNET\\Backend\\BackMascotas.csproj",
         "packagesPath": "C:\\Users\\SISTEMAS\\.nuget\\packages\\",
-        "outputPath": "D:\\ProyectoHarp\\BackMascotas\\obj\\",
+        "outputPath": "D:\\Proyectos\\CrudApis-AngularDotNET\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

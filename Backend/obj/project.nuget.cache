@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ryd0P1EOPpFH9bxmetJTfMNfCFrMiAXnjlAKmrmlf6ITBKV942TFymvb92nK/JUna46n0QVAIgLeNEyYFqaC4A==",
+  "dgSpecHash": "ITMoZrkziXVE89nzDxk8QBsNj08eGINRxgES75KHDd6PiByBFWKoJezSqDrHPUv91k6I/CybOh1Fn/E1cIHKFA==",
   "success": true,
-  "projectFilePath": "D:\\ProyectoHarp\\BackMascotas\\BackMascotas.csproj",
+  "projectFilePath": "D:\\Proyectos\\CrudApis-AngularDotNET\\Backend\\BackMascotas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SISTEMAS\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\SISTEMAS\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
